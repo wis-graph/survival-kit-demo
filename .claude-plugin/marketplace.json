@@ -7,7 +7,7 @@
     {
       "name": "survival-kit",
       "source": "./",
-      "description": "작업 완료·승인 대기·오류 알림음과 /today 할 일 표, /decline 거절 답장, /morning-news 뉴스 브리핑"
+      "description": "작업 완료·승인 대기·오류 알림음과 /today 할 일 표, /decline 거절 답장, /morning-news 뉴스 브리핑, /off-work 퇴근 카운트다운"
     }
   ],
   "metadata": {
