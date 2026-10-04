@@ -1,0 +1,39 @@
+{
+  "description": "작업 완료·승인 대기·API 오류를 직접 만든 소리(sounds/)로 알린다. macOS는 afplay, Windows는 PowerShell로 재생",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/done.wav\"; powershell.exe -NoProfile -Command \"(New-Object Media.SoundPlayer '${CLAUDE_PLUGIN_ROOT}/sounds/done.wav').PlaySync()\"; exit 0",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/approval.wav\"; powershell.exe -NoProfile -Command \"(New-Object Media.SoundPlayer '${CLAUDE_PLUGIN_ROOT}/sounds/approval.wav').PlaySync()\"; exit 0",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/error.wav\"; powershell.exe -NoProfile -Command \"(New-Object Media.SoundPlayer '${CLAUDE_PLUGIN_ROOT}/sounds/error.wav').PlaySync()\"; exit 0",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

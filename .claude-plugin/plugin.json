@@ -1,0 +1,14 @@
+{
+  "name": "survival-kit",
+  "version": "0.4.1",
+  "description": "직장인 생존 키트: 작업 완료·승인 대기·오류를 서로 다른 소리로 알리고, /today로 할 일 표를, /decline으로 거절 답장 세 가지를, /morning-news로 세 줄 뉴스 브리핑을 만든다",
+  "author": {
+    "name": "wis"
+  },
+  "keywords": [
+    "notification",
+    "sound",
+    "todo",
+    "productivity"
+  ]
+}

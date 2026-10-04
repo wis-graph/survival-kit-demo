@@ -1,0 +1,16 @@
+{
+  "name": "survival-kit-demo",
+  "owner": {
+    "name": "wis"
+  },
+  "plugins": [
+    {
+      "name": "survival-kit",
+      "source": "./",
+      "description": "작업 완료·승인 대기·오류 알림음과 /today 할 일 표, /decline 거절 답장, /morning-news 뉴스 브리핑"
+    }
+  ],
+  "metadata": {
+    "description": "직장인 생존 키트 수업용 마켓플레이스"
+  }
+}
